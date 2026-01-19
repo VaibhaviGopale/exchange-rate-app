@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="circle circle--purple"></div>
+    <div class="circle circle--blue"></div>
+
+    <main class="currency-converter">
+        <h1 class="currency-converter__title">Currency Converter</h1>
+
+        <input class="currency-converter__input" placeholder="0" type="number" id="inputSourceCurrency">
+
+        <div class="currency-converter__select-group">
+
+            <!-- Source currency input section -->
+            <section class="currency-converter__select">
+                <img id="imgSourceCurrency" src="https://flagcdn.com/w640/us.png">
+                 <select id="selectSourceCurrency">
+                    
+                 </select>
+            </section>
+
+            <!-- Separator with swap button -->
+            <button id="btnSwap" class="currency-converter_swap-btn">
+                <i class="bx bx-swap-horizontal"></i>
+            </button>
+
+            <!-- Target currency input section -->
+            <section class="currency-converter__select">
+                <img id="imgTargetCurrency" src="https://flagcdn.com/w640/id.png">
+                 <select id="selectTargetCurrency">
+                    
+                 </select>
+            </section>
+        </div>
+
+        <!-- Exchange rate info -->
+        <div class="currency-converter__exchange-rate">
+            <span id="exchangeRateText" class="currency-converter__exchange-rate-text">
+                0 USD = 0 IDR
+            </span>
+        </div>
+
+        <!-- Button to perform conversion -->
+        <button id="btnConvert" class="currency-converter__convert-btn">
+            Exchange
+        </button>
+    </main>
+    
+    <script src="app.js" type="module"></script>
+</body>
+</html>
